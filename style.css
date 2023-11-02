@@ -10,3 +10,11 @@
 section {
   padding-top: 5rem;
 }
+
+.kenangan-img {
+  width: 100%;
+}
+
+#kenangan .row > * {
+  padding: 0;
+}
