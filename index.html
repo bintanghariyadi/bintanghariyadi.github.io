@@ -39,6 +39,12 @@
               <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#kenangan">Kenangan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#my-atribute">Atribute</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -138,10 +144,47 @@
           </div>
         </div>
       </div>
+
+      <section id="my-atribute">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Atribute</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+<div class="atribute-box">
+  <h4 class="atribute-name">Laptop</h4>
+<img src="img/atribute/1.png" alt="Laptop" class="atribute-img">
+  <a href="#" class="btn btn-light atribute-detail-button">Show Details</a>
+</div>
+
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+<div class="atribute-box">
+  <h4 class="atribute-name">Tas</h4>
+<img src="img/atribute/2.png" alt="tas" class="atribute-img">
+  <a href="#" class="btn btn-light atribute-detail-button">Show Details</a>
+</div>
+
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+<div class="atribute-box">
+  <h4 class="atribute-name">Kecamata</h4>
+<img src="img/atribute/3.png" alt="kecamata" class="atribute-img">
+  <a href="#" class="btn btn-light atribute-detail-button">Show Details</a>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
-          fill-opacity="1"
+          fill-opacity="10"
           d="M0,64L48,101.3C96,139,192,213,288,208C384,203,480,117,576,106.7C672,96,768,160,864,197.3C960,235,1056,245,1152,245.3C1248,245,1344,235,1392,229.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
@@ -192,6 +235,7 @@
       </div>
     </section>
     <!--akhir kenangan-->
+
     <!--contact-->
     <section id="contact">
       <div class="container">
@@ -291,6 +335,14 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
-
+<script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".atribute-box"), {
+		max: 35,
+		speed: 1000,
+    glare: true,
+	});
+	
+</script>
   </body>
 </html>
